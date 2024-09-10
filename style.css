@@ -1055,16 +1055,18 @@ h1 .brand {
         text-align: center;
     }
 
-    .button{
-        background-color: #e74c3c;
+    .button {
+        background-color: #ffffff; /* Original background color */
+        transition: all 0.2s ease-in-out; /* Smooth transition */
     }
-
+    
     .button:hover {
-        
+        background-color: #f0f0f0; /* Change color on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
     }
-
-    button:active {
-        background-color: #BFFF00;
-        transform: scale(1.05);
+    
+    .button:active {
+        background-color: #BFFF00; /* Change color on click */
+        transform: scale(0.95); /* Slightly shrink on click */
     }
 }
