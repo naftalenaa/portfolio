@@ -1060,13 +1060,14 @@ h1 .brand {
         transition: all 0.2s ease-in-out; /* Smooth transition */
     }
     
-    .button:hover {
-        background-color: #f0f0f0; /* Change color on hover */
-        transform: scale(1.00); /* Slightly enlarge on hover */
-    }
-    
     .button:active {
         background-color: #BFFF00; /* Change color on click */
         transform: scale(0.95); /* Slightly shrink on click */
+    }
+    
+    /* Remove or comment out the hover effect */
+    .button:hover {
+        background-color: #ffffff; /* Keep the original color on hover or adjust as needed */
+        transform: scale(1.00); /* No enlargement on hover */
     }
 }
