@@ -836,7 +836,14 @@ h1 .brand {
         position: absolute;
         font-weight: 400;
         white-space: nowrap;
+        transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     }
+
+    .get-in-touch:active {
+        transform: scale(0.95); /* Slightly shrink on click */
+        background-color: #BFFF00;
+    }
+
 
     .image-hero-container {
         height: 402px;
