@@ -1062,7 +1062,7 @@ h1 .brand {
     
     .button:hover {
         background-color: #f0f0f0; /* Change color on hover */
-        transform: scale(1.05); /* Slightly enlarge on hover */
+        transform: scale(1.00); /* Slightly enlarge on hover */
     }
     
     .button:active {
