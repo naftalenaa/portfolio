@@ -131,6 +131,16 @@ nav ul li {
 
 }
 
+.hero-mob {
+    display: none;
+    visibility: hidden;
+}
+
+.hero-desk {
+    display: block;
+    display: none;
+}
+
 h1 .brand {
     font-family: 'IBM Plex Serif', serif;
     font-weight: 500;
@@ -513,13 +523,13 @@ h1 .brand {
 }
 
 .exp-desc {
-    display: flex; 
+    display: flex;
     max-width: 45%;
 }
 
 .exp-sub-desc {
-    display:flex ; 
-    max-width: 40%; 
+    display: flex;
+    max-width: 40%;
     opacity: 0.8;
 }
 
@@ -635,7 +645,7 @@ h1 .brand {
 /* ... (existing styles) ... */
 
 /* Tablet Styles */
-@media screen and (max-width: 1200px ) and (min-width: 449px)  {
+@media screen and (max-width: 1200px) and (min-width: 449px) {
 
     #hero,
     #works,
@@ -650,11 +660,19 @@ h1 .brand {
         align-items: center;
     }
 
-    body{
+    body {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 120px;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    .hero-desk {
+        display: block;
     }
 
     nav {
@@ -676,7 +694,7 @@ h1 .brand {
         flex-direction: column;
         align-items: center;
     }
-    
+
 
     .hero-class-2 {
         flex-direction: column;
@@ -710,16 +728,16 @@ h1 .brand {
         font-weight: 300;
     }
 
-    .image-hero-container{
+    .image-hero-container {
         margin-top: 0px;
     }
-    
+
     .tab-resp {
         display: flex;
         width: 45%;
     }
 
-    .works-desc{
+    .works-desc {
         display: flex;
         width: 40%;
     }
@@ -738,7 +756,7 @@ h1 .brand {
         text-align: center;
     }
 
-    .works-container{
+    .works-container {
         display: flex;
         flex-direction: row;
         align-items: end;
@@ -809,7 +827,19 @@ h1 .brand {
         margin-top: 0px;
     }
 
-    body{
+    #hero {
+        margin-top: 48px;
+    }
+
+    .hero-mobile {
+        visibility: hidden;
+    }
+
+    .hero-desk {
+        display: block;
+    }
+
+    body {
         display: flex;
         min-width: 100%;
         flex-direction: column;
@@ -839,8 +869,9 @@ h1 .brand {
         transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     }
 
-    .get-in-touch:active {
-        transform: scale(0.95); /* Slightly shrink on click */
+    .get-in-touch:hover {
+        transform: scale(0.95);
+        /* Slightly shrink on click */
         background-color: #BFFF00;
     }
 
@@ -944,7 +975,7 @@ h1 .brand {
         max-width: 100%;
         margin-bottom: 64px;
     }
-    
+
     .works-sub {
         display: flex;
         align-items: center;
@@ -952,15 +983,15 @@ h1 .brand {
         gap: 12px;
     }
 
-    .works-sub-desc{
+    .works-sub-desc {
         text-align: center;
     }
-    
+
     .display-porto {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 48px;
-    
+
     }
 
     .works-tittle {
@@ -988,13 +1019,13 @@ h1 .brand {
     }
 
     .exp-desc {
-        display: flex; 
+        display: flex;
         max-width: 100%;
     }
 
     .exp-sub-desc {
-        display:flex ; 
-        max-width: 100%; 
+        display: flex;
+        max-width: 100%;
         opacity: 0.8;
     }
 
@@ -1015,7 +1046,7 @@ h1 .brand {
         max-width: 400px;
     }
 
-    .display-grid{
+    .display-grid {
         display: flex;
         align-content: center;
     }
@@ -1029,14 +1060,14 @@ h1 .brand {
         align-items: center;
     }
 
-    .display-exp-contain{
+    .display-exp-contain {
         padding: 24px 0px;
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .footer-container{
+    .footer-container {
         padding: 32px 0px;
     }
 
@@ -1063,18 +1094,32 @@ h1 .brand {
     }
 
     .button {
-        background-color: #ffffff; /* Original background color */
-        transition: all 0.2s ease-in-out; /* Smooth transition */
+        background-color: #ffffff;
+        /* Original background color */
+        transition: all 0.2s ease-in-out;
+        /* Smooth transition */
     }
-    
-    .button:active {
-        background-color: #BFFF00; /* Change color on click */
-        transform: scale(0.95); /* Slightly shrink on click */
+
+    /* Default styles */
+    .button {
+        background-color: #ffffff;
+        /* Original background color */
+        transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        pointer-events: auto;
+        /* Ensure clicks work */
     }
-    
-    /* Remove or comment out the hover effect */
+
+    /* Hover effect on desktop */
     .button:hover {
-        background-color: #ffffff; /* Keep the original color on hover or adjust as needed */
-        transform: scale(1.00); /* No enlargement on hover */
+        background-color: #f0f0f0;
+        /* Change color on hover */
+    }
+
+    /* Active effect */
+    .button:active {
+        background-color: #BFFF00;
+        /* Change color on click */
+        transform: scale(0.95);
+        /* Slightly shrink on click */
     }
 }
