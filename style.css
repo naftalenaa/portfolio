@@ -1058,7 +1058,7 @@ h1 .brand {
     .button:hover {
     }
 
-    button.button:active {
+    button:active {
         background-color: #BFFF00;
         transform: scale(1.05);
     }
