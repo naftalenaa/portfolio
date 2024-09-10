@@ -831,7 +831,7 @@ h1 .brand {
         right: 20px;
         top: -50px;
         width: fit-content;
-        height: fit-content;
+        height: auto;
         padding: 16px;
         position: absolute;
         font-weight: 400;
