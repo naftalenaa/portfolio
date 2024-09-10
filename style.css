@@ -1056,8 +1056,6 @@ h1 .brand {
     }
 
     .button:hover {
-        background-color: #BFFF00;
-        transform: scale(1.05);
     }
 
     button.button:active {
