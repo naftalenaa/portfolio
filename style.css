@@ -127,7 +127,7 @@ nav ul li {
     height: fit-content;
     max-width: 1440px;
     padding: 64px;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 60px;
 
 }
 
@@ -137,8 +137,8 @@ nav ul li {
 }
 
 .hero-desk {
-    display: block;
-    display: none;
+    display: flex;
+    visibility: visible;
 }
 
 h1 .brand {
@@ -282,7 +282,7 @@ h1 .brand {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 64px;
+    margin-top: 32px;
     background-color: #BBBBBB;
 }
 
@@ -304,8 +304,8 @@ h1 .brand {
     padding: 64px;
     flex-direction: row;
     gap: 64px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     scroll-margin-top: 120px;
 }
 
@@ -366,8 +366,8 @@ h1 .brand {
     padding: 64px;
     flex-direction: row;
     gap: 64px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     scroll-margin-top: 120px;
 
 }
@@ -409,8 +409,8 @@ h1 .brand {
     padding: 64px;
     flex-direction: column;
     gap: 64px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     scroll-margin-top: 120px;
 
 }
@@ -471,8 +471,8 @@ h1 .brand {
     padding: 64px;
     flex-direction: row;
     gap: 64px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     scroll-margin-top: 64px;
 }
 
@@ -485,8 +485,8 @@ h1 .brand {
     padding: 64px;
     flex-direction: column;
     gap: 64px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     scroll-margin-top: 120px;
 }
 
@@ -582,9 +582,10 @@ h1 .brand {
     padding: 64px;
     flex-direction: column;
     gap: 0px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 80px;
+    margin-bottom: 80pxpx;
     scroll-margin-top: 120px;
+    
 }
 
 .footer-container {
@@ -660,6 +661,10 @@ h1 .brand {
         align-items: center;
     }
 
+    #hero {
+        margin-top: 48px;
+    }
+
     body {
         display: flex;
         flex-direction: column;
@@ -667,7 +672,7 @@ h1 .brand {
         gap: 120px;
     }
 
-    .hero-mobile {
+    .hero-mob {
         display: none;
     }
 
@@ -681,7 +686,11 @@ h1 .brand {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 16px 64px;
+        padding: 16px 32px;
+    }
+
+    .navbar-text {
+        display: none;
     }
 
     #works {
@@ -827,16 +836,22 @@ h1 .brand {
         margin-top: 0px;
     }
 
+    .navbar-text {
+        display: none;
+    }
+
     #hero {
         margin-top: 48px;
     }
 
-    .hero-mobile {
-        visibility: hidden;
+    .hero-mob {
+        display: flex;
+        visibility: visible;
     }
 
     .hero-desk {
-        display: block;
+        display: none;
+        visibility: hidden;
     }
 
     body {
